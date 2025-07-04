@@ -1,0 +1,13 @@
+LOCAL/
+
+Server/Eff/
+Server/log/
+Server/resources/
+Server/target/
+
+run.cmd
+
+*.class
+
+.idea/
+*.iml
