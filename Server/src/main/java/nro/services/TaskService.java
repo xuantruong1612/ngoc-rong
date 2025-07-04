@@ -248,19 +248,19 @@ public class TaskService {
         return false;
     }
 
-//    //kiểm tra hoàn thành nhiệm vụ gia nhập bang hội
+//    //kiểm tra Bạn đã hoàn thành nhiệm vụ gia nhập bang hội
 //    public void checkDoneTaskJoinClan(Player player) {
 //        if (!player.isBoss && !player.isPet && !player.isClone) {
 //            doneTask(player, ConstTask.TASK_0_1);
 //        }
 //    }
-//    //kiểm tra hoàn thành nhiệm vụ lấy item từ rương
+//    //kiểm tra Bạn đã hoàn thành nhiệm vụ lấy item từ rương
 //    public void checkDoneTaskGetItemBox(Player player) {
 //        if (!player.isBoss && !player.isPet && !player.isClone && !player.isBot) {
 //            doneTask(player, ConstTask.TASK_0_3);
 //        }
 //    }
-    //kiểm tra hoàn thành nhiệm vụ sức mạnh
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ sức mạnh
     public void checkDoneTaskPower(Player player, long power) {
         if (!player.isBoss && !player.isPet && !player.isClone && !player.isBot) {
             if (power >= 1000000000000l) {
@@ -277,13 +277,13 @@ public class TaskService {
         }
     }
 
-    //kiểm tra hoàn thành nhiệm vụ khi player sử dụng tiềm năng
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ khi player sử dụng tiềm năng
 //    public void checkDoneTaskUseTiemNang(Player player) {
 //        if (!player.isBoss && !player.isPet && !player.isClone && !player.isBot) {
 //            doneTask(player, ConstTask.TASK_30_0);
 //        }
 //    }
-    //kiểm tra hoàn thành nhiệm vụ khi vào map nào đó
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ khi vào map nào đó
 //    public void checkDoneTaskGoToMap(Player player, Zone zoneJoin) {
 //        if (!player.isBoss && !player.isClone && !player.isPet && !player.isClone && !player.isMiniPet && !player.isBot) {
 //            switch (zoneJoin.map.mapId) {
@@ -338,7 +338,7 @@ public class TaskService {
 //            }
 //        }
 //    }
-    //kiểm tra hoàn thành nhiệm vụ khi nhặt item
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ khi nhặt item
     public void checkDoneTaskPickItem(Player player, ItemMap item) {
         if (!player.isBoss && !player.isPet && !player.isBot && !player.isClone && item != null && item.itemTemplate != null) {
             switch (item.itemTemplate.id) {
@@ -356,7 +356,7 @@ public class TaskService {
         }
     }
 
-    //kiểm tra hoàn thành nhiệm vụ kết bạn
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ kết bạn
     public void checkDoneTaskMakeFriend(Player player, Player friend) {
         if (!player.isBoss && !player.isPet && !player.isClone) {
             switch (friend.gender) {
@@ -373,7 +373,7 @@ public class TaskService {
         }
     }
 
-    //kiểm tra hoàn thành nhiệm vụ khi xác nhận menu npc nào đó
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ khi xác nhận menu npc nào đó
     public void checkDoneTaskConfirmMenuNpc(Player player, Npc npc, byte select) {
         if (!player.isBoss && !player.isPet && !player.isClone) {
             switch (npc.tempId) {
@@ -390,7 +390,7 @@ public class TaskService {
         }
     }
 
-    //kiểm tra hoàn thành nhiệm vụ khi tiêu diệt được boss
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ khi tiêu diệt được boss
     public void checkDoneTaskKillBoss(Player player, Boss boss) {
         if (player != null && !player.isBoss && !player.isPet && !player.isClone && !player.isBot) {
             switch ((int) boss.id) {
@@ -446,7 +446,7 @@ public class TaskService {
         }
     }
 
-    //kiểm tra hoàn thành nhiệm vụ khi giết được quái
+    //kiểm tra Bạn đã hoàn thành nhiệm vụ khi giết được quái
     public void checkDoneTaskKillMob(Player player, Mob mob) {
         if (!player.isBoss && !player.isPet && !player.isBot && !player.isClone && !player.isBot) {
             switch (mob.tempId) {
@@ -516,7 +516,7 @@ public class TaskService {
                     item.itemOptions.add(new ItemOption(30, Util.nextInt(15, 16)));
                     InventoryService.gI().addItemBag(player, item, 99999999999l);
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận Được 10k Thỏi Vàng Hãy Tiếp Tục Nha ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn Đã Nhận Được 10k Thỏi Vàng Hãy Tiếp Tục Nha ");
                     break;
                 case ConstTask.TASK_21_0:
                     if (isCurrentTask(player, idTaskCustom)) {
@@ -579,21 +579,21 @@ public class TaskService {
                     InventoryService.gI().addItemBag(player, item4, 99999999999l);
                     InventoryService.gI().addItemBag(player, item5, 99999999999l);
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận Được 1Sét Tiềm Năng Vip ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được Set Tiềm Năng VIP ");
                     break;
                 case ConstTask.TASK_22_0:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_22_1:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_22_2:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_22_3:
@@ -621,17 +621,17 @@ public class TaskService {
                     InventoryService.gI().addItemBag(player, item8, 99999999999l);
                     InventoryService.gI().addItemBag(player, item9, 99999999999l);
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;
 
                 case ConstTask.TASK_23_0:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_23_1:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_23_2:
@@ -647,11 +647,11 @@ public class TaskService {
                     InventoryService.gI().addItemBag(player, item10, 99999999999l);
 
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;
                 case ConstTask.TASK_24_0:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
 
@@ -671,7 +671,7 @@ public class TaskService {
                     InventoryService.gI().addItemBag(player, item13, 99999999999l);
 
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;
 
                 case ConstTask.TASK_25_0:
@@ -702,32 +702,32 @@ public class TaskService {
                     InventoryService.gI().addItemBag(player, item15, 99999999999l);
 
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;
 
                 case ConstTask.TASK_26_0:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_26_1:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_26_2:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_26_3:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
                 case ConstTask.TASK_26_4:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;
 
@@ -745,7 +745,7 @@ public class TaskService {
                     InventoryService.gI().addItemBag(player, item16, 99999999999l);
 
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;
                     
                    case ConstTask.TASK_27_0:
@@ -764,32 +764,32 @@ public class TaskService {
                     player.CapTamkjll +=50;
                     InventoryService.gI().addItemBag(player, item17, 99999999999l);
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;  
                   
                    case ConstTask.TASK_28_0:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;    
                    case ConstTask.TASK_28_1:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;     
                    case ConstTask.TASK_28_2:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;     
                     case ConstTask.TASK_28_3:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;    
                    case ConstTask.TASK_28_4:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;  
                     
@@ -808,34 +808,34 @@ public class TaskService {
                     item18.itemOptions.add(new ItemOption(30, 500));
                     InventoryService.gI().addItemBag(player, item18, 99999999999l);
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;  
 //                      case ConstTask.TASK_29_0:
 //                    break;    
                     
                    case ConstTask.TASK_29_0:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;    
                     case ConstTask.TASK_29_1:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;      
                      case ConstTask.TASK_29_2:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;     
                       case ConstTask.TASK_29_3:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;    
                       case ConstTask.TASK_29_4:
                     if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;    
                      case ConstTask.TASK_29_5:
@@ -851,11 +851,11 @@ public class TaskService {
                     item19.itemOptions.add(new ItemOption(30, 500));
                     InventoryService.gI().addItemBag(player, item19, 99999999999l);
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;    
                      case ConstTask.TASK_30_0:
                    if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;    
                     case ConstTask.TASK_30_1:
@@ -871,7 +871,7 @@ public class TaskService {
                     item20.itemOptions.add(new ItemOption(30, 500));
                     InventoryService.gI().addItemBag(player, item20, 99999999999l);
                     InventoryService.gI().sendItemBags(player);
-                    Service.gI().sendThongBaoFromAdmin(player, "Chúc Mừng Bạn Đã Làm Nhiệm Vụ Tốt lắm\nBạn Đã Nhận quà nv mở ra để xem ");
+                    Service.gI().sendThongBaoFromAdmin(player, "Chúc mừng bạn đã Bạn đã hoàn thành nhiệm vụ\nBạn vừa nhận được quà nhiệm vụ ");
                     break;    
                     
                     
@@ -879,7 +879,7 @@ public class TaskService {
                     
                       case ConstTask.TASK_31_0:
                    if (isCurrentTask(player, idTaskCustom)) {
-                        Service.gI().sendThongBao(player, "Đã Ok");
+                        Service.gI().sendThongBao(player, "Bạn đã hoàn thành nhiệm vụ");
                     }
                     break;  
                     
@@ -2677,8 +2677,8 @@ public class TaskService {
                         + percentDone + "%)");
             }
         } else {
-            Service.getInstance().sendThongBao(player, "Chúc mừng bạn đã hoàn thành nhiệm vụ, "
-                    + "bây giờ hãy quay về Bò Mộng trả nhiệm vụ.");
+            Service.getInstance().sendThongBao(player, "Chúc mừng bạn đã bạn đã hoàn thành nhiệm vụ, "
+                    + "bây giờ hãy quay về Bò Mộng trả nhiệm vụ");
         }
     }
 

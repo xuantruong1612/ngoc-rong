@@ -936,7 +936,7 @@ public class Zone {
                 System.err.println("[WARN] No valid zone found for waypoint mapId: " + wp.goMap);
             }
         } else {
-            System.err.println("[WARN] TRUONG Pro");
+            System.err.println("[WARN] TRUONG PRO");
         }
     }
 
@@ -954,7 +954,7 @@ public class Zone {
         }
 
         Service.getInstance().resetPoint(player, x, player.location.y);
-        Service.getInstance().sendThongBaoOK(player, "Không thể đến khu vực này.");
+        Service.getInstance().sendThongBaoOK(player, "Không thể đến khu vực này");
     }
 }
 

@@ -144,7 +144,7 @@ public class RewardService {
                             // thoivang.itemOptions.add(new ItemOption(30, 0));
                             InventoryService.gI().addItemBag(player, thoivang, 2000000000000000l);
                             InventoryService.gI().sendItemBags(player);
-                            ServerNotify.gI().notify(player.name + " vừa nhặt được capsule Kì Bí" + " tại " + mob.zone.map.mapName + " khu vực " + mob.zone.zoneId);
+                            ServerNotify.gI().notify(player.name + " vừa nhặt được Capsule Kì Bí" + " tại " + mob.zone.map.mapName + " khu vực " + mob.zone.zoneId);
 
                         }
 

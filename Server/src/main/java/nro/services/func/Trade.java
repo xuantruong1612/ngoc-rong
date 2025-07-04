@@ -90,7 +90,7 @@ public class Trade {
 
     public void addItemTrade(Player pl, byte index, int quantity) {
          if (!pl.getSession().actived) {
-            Service.gI().sendThongBaoFromAdmin(pl, "Yêu cầu Có Dấu Ấn Rồng\nVui Lòng Nạp 50k Để Mua Dấu Ấn\nVĩnh Viễn\nGiao dịch ALL vp CT,PET,LINHTHU,HAOQUANG!");
+            Service.gI().sendThongBaoFromAdmin(pl, "Yêu cầu phải có Dấu Ấn Rồng\nNạp 50k để mua Dấu Ấn Rồng\nVĩnh viễn\nGiao dịch ALL vật phẩm\n (Cải trang, PET, Linh thú, Hào quang");
             removeItemTrade(pl, index);
             return;
         }

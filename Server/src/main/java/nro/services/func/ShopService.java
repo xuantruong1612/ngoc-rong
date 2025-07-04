@@ -678,7 +678,7 @@ public class ShopService {
                             InventoryService.gI().sendItemBags(player);
                             Service.getInstance().sendThongBao(player, "Đổi thành công " + is.temp.name);
                         } else {
-                            Service.getInstance().sendThongBao(player, "Bạn không có phiếu giảm giá!");
+                            Service.getInstance().sendThongBao(player, "Bạn không có phiếu giảm giá");
                         }
                         break;
 //                    case ConstNpc.SHOP_BILL_HUY_DIET_0:
@@ -1013,8 +1013,8 @@ public class ShopService {
             NpcService.gI().createMenuConMeo(pl, ConstNpc.BAN_NHIEU_THOI_VANG, 7710,
                     "|7|BÁN NHIỀU THỎI VÀNG\n"
                     + "|-1|Theo nguyện vọng góp ý từ các chiến binh, ta được Admin Ngọc Rồng\n"
-                    + "giao cho trọng trách hỗ trợ Bán thỏi vàng số lượng nhiều\n"
-                    + "|0|Ngươi muốn bán số lượng bao nhiêu Thỏi vàng?",
+                    + "giao cho trọng trách hỗ trợ Bán thỏi vàng số lượng lớn\n"
+                    + "|0|Ngươi muốn bán bao nhiêu Thỏi vàng?",
                     "??", "???",
                     "???");
             return;

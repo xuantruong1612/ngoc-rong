@@ -72,7 +72,7 @@ import java.util.ArrayList;
 import java.util.List;
 import nro.consts.ConstEvent;
 import nro.consts.ConstMap;
-import nro.models.boss.BossAnTrom.AnTrom;
+import nro.models.boss.BossAnTrom.TromVang;
 import nro.models.boss.BossAnTrom.TromNgoc;
 import nro.models.boss.BossAnTrom.TromNgocRuby;
 import nro.models.boss.broly.SuperBroly;
@@ -565,7 +565,7 @@ public class BossFactory {
                 boss = new TromNgocRuby();
                 break;
             case NOEN:
-                boss = new AnTrom();
+                boss = new TromVang();
                 break;
                 case THANHUYDIET:
                 boss = new Thanhuydiet();

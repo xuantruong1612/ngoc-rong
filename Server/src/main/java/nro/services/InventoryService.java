@@ -142,7 +142,7 @@ public class InventoryService {
         //mở rộng hành trang - rương đồ
         switch (item.template.id) {
             case 517:
-                if (player.inventory.itemsBag.size() < 100) {
+                if (player.inventory.itemsBag.size() < 200) {
                     player.inventory.itemsBag.add(ItemService.gI().createItemNull());
                     Service.getInstance().sendThongBaoOK(player, "Hành trang của bạn đã được mở rộng thêm 1 ô");
                     return true;
@@ -151,7 +151,7 @@ public class InventoryService {
                     return false;
                 }
             case 518:
-                if (player.inventory.itemsBox.size() < 40) {
+                if (player.inventory.itemsBox.size() < 50) {
                     player.inventory.itemsBox.add(ItemService.gI().createItemNull());
                     Service.getInstance().sendThongBaoOK(player, "Rương đồ của bạn đã được mở rộng thêm 1 ô");
                     return true;
@@ -297,7 +297,7 @@ public class InventoryService {
             case 12: //ngọc rồng
             case 30: //sao pha lê
             case 6: //đậu thần
-            //  case 21:// mini pet
+            case 21:// mini pet  -- nhả comment
             case 29: //item time, đồ ăn
             case 25: //rađa dò ngọc namếc
             case 27: //đồ tạp
@@ -343,7 +343,7 @@ public class InventoryService {
                         sortItemBag(player);
                         sendItemBags(player);
                     } else {
-                        Service.getInstance().sendThongBao(player, "Đây là vật phẩm quý hiếm, không thể vứt được");
+                        Service.getInstance().sendThongBao(player, "Đây là vật phẩm quý hiếm, không thể vứt");
                     }
                 }
             }
@@ -621,14 +621,14 @@ public class InventoryService {
 
         // Gửi thông báo riêng cho người chơi
         Service.getInstance().sendThongBaoFromAdmin(player, 
-            "Hệ thống phát hiện bạn đang sử dụng vật phẩm không hợp lệ.\n"
-          + "Hành vi lợi dụng lỗi (bug) có thể dẫn đến khóa tài khoản.\n"
-          + "Vui lòng dừng lại ngay để tránh hậu quả đáng tiếc.");
+            "Hệ thống phát hiện bạn đang sử dụng vật phẩm không hợp lệ\n"
+          + "Hành vi lợi dụng lỗi (bug) có thể dẫn đến khóa tài khoản\n"
+          + "Vui lòng dừng lại ngay để tránh hậu quả đáng tiếc");
 
         // Gửi thông báo chung (nếu cần)
         Service.getInstance().sendThongBaoBenDuoi(
             "Cảnh báo: Người chơi " + player.name + 
-            " có dấu hiệu sử dụng vật phẩm bất thường. Hệ thống đang theo dõi.");
+            " có dấu hiệu sử dụng vật phẩm bất thường. Hệ thống đang theo dõi");
 
         return;
     }

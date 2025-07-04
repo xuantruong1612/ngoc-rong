@@ -174,7 +174,7 @@ public class NpcFactory {
 //                                                + "\n|6|Để đến được Thánh Địa bạn cần phải Có Clan Trên 5 Thành Viên\n"
 //                                                + "\n|7|Farm Quai Nhận Những Vật Phẩm Chỉ Có Nạp Mới Có\n"
 //                                                + "Tiêu Diệt Kẻ Khác Để nhận Điểm Gia Tộc\n"
-//                                                + "Hãy Tập Luyện Nhé+ Xuất Hiện Boss Cực Vip\n"
+//                                                + "Hãy Tập Luyện Nhé+ Xuất Hiện Boss Cực VIP\n"
 //                                                + "|2|Bạn đang có : " + player.pointPvp + " điểm Gia Tộc",
 //                                                "Đến\nThánh Địa", "Đổi\nSD Gốc", "ĐỔI\nHP,KI Gốc", "Đổi\nDef Gốc", "Cút");
 //                                    } else {
@@ -184,7 +184,7 @@ public class NpcFactory {
 //                                                + "\n|6|Để đến được Thánh Địa bạn cần phải Có Clan Trên 5 Thành Viên\n"
 //                                                + "\n|7|Farm Quai Nhận Những Vật Phẩm Chỉ Có Nạp Mới Có\n"
 //                                                + "Tiêu Diệt Kẻ Khác Để nhận Điểm Gia Tộc\n"
-//                                                + "Hãy Tập Luyện Nhé+ Xuất Hiện Boss Cực Vip\n"
+//                                                + "Hãy Tập Luyện Nhé+ Xuất Hiện Boss Cực VIP\n"
 //                                                + "|2|Bạn đang có : " + player.pointPvp + " điểm Gia Tộc",
 //                                                "Đến\nThánh Địa", "Đổi\nSD Gốc", "ĐỔI\nHP,KI Gốc", "Đổi\nDef Gốc", "Cút");
 //
@@ -294,7 +294,7 @@ public class NpcFactory {
                             if (this.mapId == MapName.LANG_ARU) {
                                 this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|HELLO BẠN IU\n"
                                         + "|6|Nhớ Nạp Nhiều Nhiều Cho Trường Nha\n"
-                                        + "|5|Farm Train Điểm Ngũ Hành Sơn Đổi Quà Vip\n"
+                                        + "|5|Farm Train Điểm Ngũ Hành Sơn Đổi Quà VIP\n"
                                         + "|5|Điểm TrainFarm: " + Util.cap(player.diemfam) + " Điểm\n",
                                         "Đến Map\nNgũ Hành Sơn", "Đến Map\nThảo Nguyên", "Đến Map\nThànhPhố\nTàiNguyên",
                                         "Đến Map\nRừng Đá", "Đến Map\nThung Lũng", "Đến Map\nRừng Thông");
@@ -4190,7 +4190,7 @@ public class NpcFactory {
                                             case 11:
                                                 NpcService.gI().createMenuConMeo(player, ConstNpc.huongdan, 31808,
                                                         "|7|Chúc Bạn Một Ngày Vui Vẻ\n"
-                                                        + "|5|Dưới Đây Là HD UP Điểm Vip\n"
+                                                        + "|5|Dưới Đây Là HD UP Điểm VIP\n"
                                                         + "Yêu Cầu: VIP 0 Up All Map\n"
                                                         + "Mỗi Lần Nhặt Được x1 Tỉ lệ 1/100\n"
                                                         ,
@@ -4208,7 +4208,7 @@ public class NpcFactory {
                                                         + "Nhận Random 1-5M EXP Tiên Bang...\n"
                                                         + "Nhận Random 1-500k EXP Nhập ma...\n"
                                                         + "Nhận Random 1-5000 Điểm Farm......\n"
-                                                        + "Nhận Random 1-50 Điểm vip........\n"
+                                                        + "Nhận Random 1-50 Điểm VIP........\n"
                                                         + "Cảm ơn Mọi Người! Lh Admin.......\n",
                                                         "Đã Hiểu"
                                                 );
@@ -4567,7 +4567,7 @@ public class NpcFactory {
                             if (canOpenNpc(player)) {
                                 if (this.mapId == 206 || this.mapId == 5) {
                                     this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|Chúc Bạn Một Ngày Vui Vẻ\n"
-                                            + "|5|Chỗ Em Có Bán Ít Đệ Tử Vip Hợp Thể Từ 1000%.\n"
+                                            + "|5|Chỗ Em Có Bán Ít Đệ Tử VIP Hợp Thể Từ 1000%.\n"
                                             + "ĐỆ TỬ BÁT GIỚI 1000%\n"
                                             + "ĐỆ TỬ HẰNG NGA 2000%\n"
                                             + "ĐỆ TỬ GOKU Ul 3000%"
@@ -4588,7 +4588,7 @@ public class NpcFactory {
                                             case 0:
                                                 NpcService.gI().createMenuConMeo(player, ConstNpc.DOI_DTVIP, -1,
                                                         "|7|Chúc Bạn Một Ngày Vui Vẻ\n"
-                                                        + "|5|Chỗ Em Có Bán Ít Đệ Tử Vip Hợp Thể Từ 1000%.\n"
+                                                        + "|5|Chỗ Em Có Bán Ít Đệ Tử VIP Hợp Thể Từ 1000%.\n"
                                                         + "ĐỆ TỬ BÁT GIỚI 1000%\n"
                                                         + "ĐỆ TỬ HẰNG NGA 2000%\n"
                                                         + "ĐỆ TỬ GOKU Ul 3000%\n"
@@ -6143,7 +6143,7 @@ public class NpcFactory {
                             if (canOpenNpc(player)) {
                                 if (this.mapId == 45) {
                                     this.createOtherMenu(player, ConstNpc.BASE_MENU, "Con muốn làm gì nào", "Đến Kaio",
-                                            "Không làm gì");
+                                            "Đóng");
                                 }
                                 if (mapId == 141) {
                                     if (player.Tamkjlltutien[2] < 1) {
@@ -7800,7 +7800,7 @@ public class NpcFactory {
                                         this.createOtherMenu(player, ConstNpc.BASE_MENU, "Bạn đang có " + soLuong
                                                 + " bí kiếp.\n"
                                                 + "Hãy kiếm đủ 10000 bí kiếp tôi sẽ dạy bạn cách dịch chuyển tức thời của người Yardart\n"
-                                                + "với ngẫu nhiên 1 cải trang dịch chuyển vip",
+                                                + "với ngẫu nhiên 1 cải trang dịch chuyển VIP",
                                                 "Học dịch\nchuyển", "Đóng");
                                     } else {
                                         this.createOtherMenu(player, ConstNpc.BASE_MENU, "Bạn đang có " + soLuong
@@ -8004,7 +8004,7 @@ public class NpcFactory {
                                     mapHoTong = listMap[Util.nextInt(listMap.length - 1)];
                                     this.createOtherMenu(player, ConstNpc.BASE_MENU, "Ngươi muốn gì ở ta?\n"
                                             + "Ngươi Hãy Hộ Tống Ta Đến Nơi An Nghỉ Ta Sẽ Cho Ngươi Kho Báu !\n"
-                                            + "Thu Gom Đủ Linh Hồn Để Đổi Trang Sức Cực Vip Haha",
+                                            + "Thu Gom Đủ Linh Hồn Để Đổi Trang Sức Cực VIP Haha",
                                             "Vận Tiêu", "Shop Tiêu", "Từ chối");
                                 }
                             }
@@ -8510,7 +8510,7 @@ public class NpcFactory {
 
                                 if (player.vip < 6) {
                                     ;
-                                    Service.getInstance().sendThongBaoFromAdmin(player, "|8|\nCần Đạt Trình Độ Đẹp Trai Từ Vip 6 Được Dịch Chuyển Tới Boss");
+                                    Service.getInstance().sendThongBaoFromAdmin(player, "|8|\nCần Đạt Trình Độ Đẹp Trai Từ VIP 6 Được Dịch Chuyển Tới Boss");
                                     return;
                                 }
 
@@ -9641,7 +9641,7 @@ public class NpcFactory {
 
                                     player.Diemvip += 10000;
                                     Service.getInstance().sendMoney(player);
-                                    Service.getInstance().sendThongBao(player, "Bạn nhận được 10k Điểm Vip ");
+                                    Service.getInstance().sendThongBao(player, "Bạn nhận được 10k Điểm VIP ");
 
                                     player.diemfam += 5000;
                                     Service.getInstance().sendMoney(player);
@@ -10409,7 +10409,7 @@ public class NpcFactory {
                                     InventoryService.gI().addItemBag(player, caitrangthoitrang, 2000000000000000l);
                                     InventoryService.gI().sendItemBags(player);
                                     Service.getInstance().sendMoney(player);
-                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú Vip ");
+                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú VIP ");
 
                                     player.ExpTamkjll += 20000000;
                                     Service.getInstance().sendMoney(player);
@@ -10443,7 +10443,7 @@ public class NpcFactory {
                                     InventoryService.gI().addItemBag(player, caitrangthoitrang, 2000000000000000l);
                                     InventoryService.gI().sendItemBags(player);
                                     Service.getInstance().sendMoney(player);
-                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú Vip ");
+                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú VIP ");
 
                                     player.ExpTamkjll += 40000000;
                                     Service.getInstance().sendMoney(player);
@@ -10477,7 +10477,7 @@ public class NpcFactory {
                                     InventoryService.gI().addItemBag(player, caitrangthoitrang, 2000000000000000l);
                                     InventoryService.gI().sendItemBags(player);
                                     Service.getInstance().sendMoney(player);
-                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú Vip ");
+                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú VIP ");
 
                                     player.ExpTamkjll += 60000000;
                                     Service.getInstance().sendMoney(player);
@@ -10512,7 +10512,7 @@ public class NpcFactory {
                                     InventoryService.gI().addItemBag(player, caitrangthoitrang, 2000000000000000l);
                                     InventoryService.gI().sendItemBags(player);
                                     Service.getInstance().sendMoney(player);
-                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú Vip ");
+                                    Service.getInstance().sendThongBao(player, "Bạn nhận được Thú VIP ");
 
                                     player.ExpTamkjll += 100000000;
                                     Service.getInstance().sendMoney(player);
@@ -10912,7 +10912,7 @@ public class NpcFactory {
                                     player.diemfam -= 1000000;
 
                                 } else {
-                                    Service.getInstance().sendThongBaoFromAdmin(player, "không đủ 1000k Điểm Farm! Và Đạt Vip 7 ");
+                                    Service.getInstance().sendThongBaoFromAdmin(player, "không đủ 1000k Điểm Farm! Và Đạt VIP 7 ");
                                 }
                                 break;
                             }
@@ -13444,7 +13444,7 @@ public class NpcFactory {
                                         PetService.gI().changeBatGioiPet(player, player.gender);
                                         PlayerDAO.subvnd(player, 100000);  // Trừ tiền
                                         Service.getInstance().sendMoney(player);  // Cập nhật tiền
-                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ Vip");
+                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ VIP");
                                     }
                                 } else {
                                     // Thông báo nếu không đủ tiền
@@ -13466,7 +13466,7 @@ public class NpcFactory {
                                         PetService.gI().changeHangNgaPet(player, player.gender);
                                         PlayerDAO.subvnd(player, 200000);  // Trừ tiền
                                         Service.getInstance().sendMoney(player);  // Cập nhật tiền
-                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ Vip");
+                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ VIP");
                                     }
                                 } else {
                                     // Thông báo nếu không đủ tiền
@@ -13487,7 +13487,7 @@ public class NpcFactory {
                                         PetService.gI().changeGokuUltraPet(player, player.gender);
                                         PlayerDAO.subvnd(player, 300000);  // Trừ tiền
                                         Service.getInstance().sendMoney(player);  // Cập nhật tiền
-                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ Vip");
+                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ VIP");
                                     }
                                 } else {
                                     // Thông báo nếu không đủ tiền
@@ -13509,7 +13509,7 @@ public class NpcFactory {
                                         PetService.gI().changeVegitoPet(player, player.gender);
                                         PlayerDAO.subvnd(player, 500000);  // Trừ tiền
                                         Service.getInstance().sendMoney(player);  // Cập nhật tiền
-                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ Vip");
+                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ VIP");
                                     }
                                 } else {
                                     // Thông báo nếu không đủ tiền
@@ -13530,7 +13530,7 @@ public class NpcFactory {
                                         PetService.gI().changeVegitoSSJPet(player, player.gender);
                                         PlayerDAO.subvnd(player, 1000000);  // Trừ tiền
                                         Service.getInstance().sendMoney(player);  // Cập nhật tiền
-                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ Vip");
+                                        Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ VIP");
                                     }
                                 } else {
                                     // Thông báo nếu không đủ tiền
@@ -13543,7 +13543,7 @@ public class NpcFactory {
                                     PetService.gI().changeMabuPet(player, player.gender);
                                     PlayerDAO.subvnd(player, 2000000);
                                     Service.getInstance().sendMoney(player);
-                                    Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ Vip");
+                                    Service.getInstance().sendThongBao(player, "Bạn Đã Mua Đệ VIP");
                                 } else {
                                     Service.getInstance().sendThongBao(player, "Bạn Đã Hết Tiền");
                                 }

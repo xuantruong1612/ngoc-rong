@@ -1,6 +1,7 @@
 package nro.models.boss.BossAnTrom;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import nro.consts.ConstPlayer;
 import nro.models.boss.Boss;
@@ -23,7 +24,7 @@ import static nro.utils.Util.thoivang;
  * @Config TRUONG
  */
 
-public class AnTrom extends Boss {
+public class TromVang extends Boss {
 
     private long lastTimePhatQua;
     private long TIME_PHAT_QUA;
@@ -34,7 +35,7 @@ public class AnTrom extends Boss {
     private static final int MIN_GOLD_STEAL = 1; // Số vàng tối thiểu bị trộm
     private static final int MAX_GOLD_STEAL = 20000000; // Số vàng tối đa bị trộm
 
-    public AnTrom() {
+    public TromVang() {
         super(NOEN, new BossData(
                 "Trộm Vàng",
                 ConstPlayer.TRAI_DAT, // genderc
@@ -57,7 +58,7 @@ public class AnTrom extends Boss {
         this.stealGoldFromPlayer();
         this.cFlag = 8;
         Service.gI().changeFlag(this, this.cFlag);
-        this.nPoint.tlNeDon = 1000;
+        this.nPoint.tlNeDon = 0;
         if (Util.canDoWithTime(lastTimeChangeMap, 60000)) {
             this.changeStatus(LEAVE_MAP);
         }
@@ -143,34 +144,43 @@ public class AnTrom extends Boss {
         itemAdd.options.add(new ItemOption(174, 2024));
         listItem.add(itemAdd);
         itemAdd = new ItemMap(zone, 822, 1, this.location.x, this.location.y, this.plAttack.id);
-        itemAdd.options.add(new ItemOption(174, 2024));
+        itemAdd.options.add(new ItemOption(175, 2024));
         listItem.add(itemAdd);
         return listItem;
     }
 
     @Override
-    public void update() {
-        super.update();
-        if (Client.gI().getPlayers().isEmpty() || this.isDie()) {
-            return;
-        }
-        try {
-            Player ramdonPlayer = Client.gI().getPlayers().get(Util.nextInt(Client.gI().getPlayers().size()));
-            if (ramdonPlayer != null && ramdonPlayer.isPl() && !ramdonPlayer.isPet && !ramdonPlayer.isMiniPet
-                    && !(ramdonPlayer instanceof AnTrom)) {
-                if (ramdonPlayer.zone.map.mapId != 51 && ramdonPlayer.zone.map.mapId != 5
-                        && ramdonPlayer.zone.map.mapId != 21 && ramdonPlayer.zone.map.mapId != 22
-                        && ramdonPlayer.zone.map.mapId != 23 && ramdonPlayer.zone.map.mapId != 113
-                        && ramdonPlayer.zone.map.mapId != 129 && ramdonPlayer.zone.map.mapId != 52
-                        && this.zone.getPlayers().size() <= 0 && System.currentTimeMillis() > this.lastTimeJoinMap) {
-                    lastTimeJoinMap = System.currentTimeMillis() + TIME_CHANGE_PLAYER;
-                    ChangeMapService.gI().changeMap(this, ramdonPlayer.zone, ramdonPlayer.location.x,
-                            ramdonPlayer.location.y);
-                }
-            }
-        } catch (Exception e) {
-        }
+public void update() {
+    super.update();
+    if (Client.gI().getPlayers().isEmpty() || this.isDie()) {
+        return;
     }
+    // Tạo danh sách các map không hợp lệ
+    List<Integer> invalidMapIds = Arrays.asList(
+        51, 5, 21, 22, 23, 113, 129, 52, 47, 206,
+        207, 208, 209, 210, 213, 214, 203, 204, 103, 104,
+        128, 131, 132, 133, 135, 136, 137, 138, 139,140,141,142,143,144,145,153
+    );
+
+    try {
+        Player ramdonPlayer = Client.gI().getPlayers().get(Util.nextInt(Client.gI().getPlayers().size()));
+        if (ramdonPlayer != null && ramdonPlayer.isPl() && !ramdonPlayer.isPet && !ramdonPlayer.isMiniPet
+                && !(ramdonPlayer instanceof TromVang)) {
+
+            // Kiểm tra nếu mapId của người chơi không phải là một trong các map không hợp lệ
+            if (!invalidMapIds.contains(ramdonPlayer.zone.map.mapId)
+                && this.zone.getPlayers().size() <= 0 
+                && System.currentTimeMillis() > this.lastTimeJoinMap) {
+                lastTimeJoinMap = System.currentTimeMillis() + TIME_CHANGE_PLAYER;
+                ChangeMapService.gI().changeMap(this, ramdonPlayer.zone, ramdonPlayer.location.x,
+                        ramdonPlayer.location.y);
+            }
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+
 
     @Override
     protected boolean useSpecialSkill() {

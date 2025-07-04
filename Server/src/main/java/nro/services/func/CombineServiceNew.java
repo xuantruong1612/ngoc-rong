@@ -668,7 +668,7 @@ public class CombineServiceNew {
                     break;
                 }
                 if (InventoryService.gI().getCountEmptyBag(player) < 1) {
-                    this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang", "Đóng");
+                    this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU, "Bạn phải có ít Nhất 1 ô trống trong hành trang", "Đóng");
                     break;
                 }
                 if (player.combineNew.itemsCombine.size() == 1) {
@@ -707,7 +707,7 @@ public class CombineServiceNew {
                     break;
                 }
                 if (InventoryService.gI().getCountEmptyBag(player) < 1) {
-                    this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang", "Đóng");
+                    this.baHatMit.createOtherMenu(player, ConstNpc.IGNORE_MENU, "Bạn phải có ít Nhất 1 ô trống trong hành trang", "Đóng");
                     break;
                 }
                 if (player.combineNew.itemsCombine.size() == 2) {
@@ -905,7 +905,7 @@ public class CombineServiceNew {
                     break;
                 }
                 if (InventoryService.gI().getCountEmptyBag(player) < 1) {
-                    Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+                    Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
                     break;
                 }
                 if (player.combineNew.itemsCombine.size() == 4) {
@@ -2064,7 +2064,7 @@ public class CombineServiceNew {
                     InventoryService.gI().sendItemBags(player);
                     reOpenItemCombine(player);
                 } else {
-                    Service.getInstance().sendThongBao(player, "Còn cái nịt mà giám");
+                    Service.getInstance().sendThongBao(player, "Không còn lượt giám định");
                     return;
                 }
             }
@@ -2412,7 +2412,7 @@ public class CombineServiceNew {
             return;
         }
         if (InventoryService.gI().getCountEmptyBag(player) < 1) {
-            Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+            Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
             return;
         }
         if (player.combineNew.itemsCombine.size() == 1) {
@@ -2551,7 +2551,7 @@ public class CombineServiceNew {
         Service.getInstance().sendMoney(player);
         reOpenItemCombine(player);
     } else {
-        Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+        Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
     }
 }
 
@@ -2907,7 +2907,7 @@ public class CombineServiceNew {
             return;
         }
         if (InventoryService.gI().getCountEmptyBag(player) < 1) {
-            Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+            Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
             return;
         }
         if (player.combineNew.itemsCombine.size() == 4) {
@@ -3102,7 +3102,7 @@ public class CombineServiceNew {
                     Service.getInstance().sendMoney(player);
                     reOpenItemCombine(player);
                 } else {
-                    Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+                    Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
                 }
             }
         }
@@ -3118,7 +3118,7 @@ public class CombineServiceNew {
             return;
         }
         if (InventoryService.gI().getCountEmptyBag(player) < 1) {
-            Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+            Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
             return;
         }
         if (player.combineNew.itemsCombine.size() == 2) {
@@ -4401,7 +4401,7 @@ public class CombineServiceNew {
             player.combineNew.itemsCombine.clear();
             reOpenItemCombine(player);
         } else {
-            Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+            Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
         }
     }
 
@@ -4437,7 +4437,7 @@ public class CombineServiceNew {
         if (InventoryService.gI().getCountEmptyBag(player) > 1) {
 
             if (player.inventory.gold < COST) {
-                Service.getInstance().sendThongBao(player, "Con cần thêm vàng để Nâng trang bị...");
+                Service.getInstance().sendThongBao(player, "Con cần thêm vàng để nâng trang bị...");
                 return;
             }
 
@@ -4476,7 +4476,7 @@ public class CombineServiceNew {
             Service.getInstance().sendMoney(player);
             reOpenItemCombine(player);
         } else {
-            Service.getInstance().sendThongBao(player, "Bạn Phải Có Ít Nhất 1 Ô Trống Hành Trang");
+            Service.getInstance().sendThongBao(player, "Bạn phải có ít Nhất 1 ô trống trong hành trang");
         }
     }
 

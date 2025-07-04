@@ -190,7 +190,7 @@ public void stealGoldFromPlayer() {
         }
         try {
             Player ramdonPlayer = Client.gI().getPlayers().get(Util.nextInt(Client.gI().getPlayers().size()));
-            if (ramdonPlayer != null && ramdonPlayer.isPl() && !ramdonPlayer.isPet && !ramdonPlayer.isMiniPet && !(ramdonPlayer instanceof AnTrom)) {
+            if (ramdonPlayer != null && ramdonPlayer.isPl() && !ramdonPlayer.isPet && !ramdonPlayer.isMiniPet && !(ramdonPlayer instanceof TromVang)) {
                 if (ramdonPlayer.zone.map.mapId != 51 && ramdonPlayer.zone.map.mapId != 5 && ramdonPlayer.zone.map.mapId != 21 && ramdonPlayer.zone.map.mapId != 22 && ramdonPlayer.zone.map.mapId != 23 && ramdonPlayer.zone.map.mapId != 113 && ramdonPlayer.zone.map.mapId != 129 && ramdonPlayer.zone.map.mapId != 52 && this.zone.getPlayers().size() <= 0 && System.currentTimeMillis() > this.lastTimeJoinMap) {
                     lastTimeJoinMap = System.currentTimeMillis() + TIME_CHANGE_PLAYER;
                     ChangeMapService.gI().changeMap(this, ramdonPlayer.zone, ramdonPlayer.location.x, ramdonPlayer.location.y);

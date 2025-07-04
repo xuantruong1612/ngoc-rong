@@ -23,7 +23,7 @@ import static nro.utils.Util.thoivang;
 
 /**
  *
- * @author ADMIN
+ * @Config TRUONG
  */
 public class TromNgocRuby extends Boss {
 
@@ -59,7 +59,7 @@ private static final int MAX_GOLD_STEAL = 20000000; // Số vàng tối đa bị
         this.stealGoldFromPlayer();
         this.cFlag = 8;
         Service.gI().changeFlag(this, this.cFlag);
-        this.nPoint.tlNeDon = 1000;
+        this.nPoint.tlNeDon = 0;
         if (Util.canDoWithTime(lastTimeChangeMap, 60000)) {
             this.changeStatus(LEAVE_MAP);
         }
@@ -157,29 +157,7 @@ public void stealGoldFromPlayer() {
 //        itemAdd.options.add(new ItemOption(30, Util.nextInt(1, 68)));
 //        itemAdd.options.add(new ItemOption(93, Util.nextInt(1, 5))); 
 //        listItem.add(itemAdd);//.... 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+ 
         return listItem;
     }
 
@@ -191,7 +169,7 @@ public void stealGoldFromPlayer() {
         }
         try {
             Player ramdonPlayer = Client.gI().getPlayers().get(Util.nextInt(Client.gI().getPlayers().size()));
-            if (ramdonPlayer != null && ramdonPlayer.isPl() && !ramdonPlayer.isPet && !ramdonPlayer.isMiniPet && !(ramdonPlayer instanceof AnTrom)) {
+            if (ramdonPlayer != null && ramdonPlayer.isPl() && !ramdonPlayer.isPet && !ramdonPlayer.isMiniPet && !(ramdonPlayer instanceof TromVang)) {
                 if (ramdonPlayer.zone.map.mapId != 51 && ramdonPlayer.zone.map.mapId != 5 && ramdonPlayer.zone.map.mapId != 21 && ramdonPlayer.zone.map.mapId != 22 && ramdonPlayer.zone.map.mapId != 23 && ramdonPlayer.zone.map.mapId != 113 && ramdonPlayer.zone.map.mapId != 129 && ramdonPlayer.zone.map.mapId != 52 && this.zone.getPlayers().size() <= 0 && System.currentTimeMillis() > this.lastTimeJoinMap) {
                     lastTimeJoinMap = System.currentTimeMillis() + TIME_CHANGE_PLAYER;
                     ChangeMapService.gI().changeMap(this, ramdonPlayer.zone, ramdonPlayer.location.x, ramdonPlayer.location.y);

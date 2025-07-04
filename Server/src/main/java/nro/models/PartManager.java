@@ -19,7 +19,11 @@ import java.util.List;
 
 import lombok.Getter;
 
-//  @author By Ahwuoc
+/**
+ * @Config TRUONG
+ */
+
+
 public class PartManager {
 
     private static final PartManager instance = new PartManager();
@@ -53,7 +57,7 @@ public class PartManager {
                 part.setPartData(partData);
                 add(part);
             }
-            Log.success("Load part thành công (" + parts.size() + ")");
+            Log.success("Load part successfully (" + parts.size() + ")");
             rs.close();
             ps.close();
             setData();
