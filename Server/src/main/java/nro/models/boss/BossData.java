@@ -13,7 +13,7 @@ public class BossData {
 // Tính bằng giây
         public static final int _10_GIAY = 10;
         public static final int _30_GIAY = 30;
-        public static final int _1_PHUT = 60;
+        public static final int _60_GIAY = 60;
         public static final int _5_PHUT = 300;
         public static final int _10_PHUT = 600;
         //public static final int _1_GIO = 360;
@@ -39,6 +39,7 @@ public class BossData {
         public static final int DMG_3TR = 3_000_000;
         public static final int DMG_10TR = 10_000_000;
 
+        public static final short DEF_0 = 0;
         public static final int DEF_100k = 100_000;
         public static final int DEF_300k = 300_000;
         public static final int DEF_500k = 500_000;
@@ -200,7 +201,7 @@ public class BossData {
                                         { Skill.DRAGON, 1, 1000 }, { Skill.DRAGON, 2, 2000 }, { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.DE_TRUNG, 1, 7_000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData SUPERBROLY = new BossData(
                         "Super Broly", // name
@@ -225,7 +226,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 15000 }, { Skill.TAI_TAO_NANG_LUONG, 3, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Broly = new BossData(
                         "Broly Săn Đệ", // name
@@ -248,7 +249,7 @@ public class BossData {
                                         { Skill.MASENKO, 1, 800 }, { Skill.MASENKO, 5, 1300 }, { Skill.MASENKO, 6, 1500
                                         }
                         },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData danangcap = new BossData(
                         "Thủ Lĩnh [Tài Nguyên]", // name
@@ -268,7 +269,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 60000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSS_THOIVANG = new BossData(
                         "Su [Thỏi Vàng]", // name
                         ConstPlayer.XAYDA, // gender
@@ -284,7 +285,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Luffy = new BossData(
                         "Luffy", // name
@@ -301,7 +302,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
 
         public static final BossData Zoro = new BossData(
                         "Zoro", // name
@@ -318,7 +319,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
 
         public static final BossData Sanji = new BossData(
                         "Sanji", // name
@@ -335,7 +336,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
 
         public static final BossData Brook = new BossData(
                         "Brook", // name
@@ -352,7 +353,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
 
         public static final BossData Chopper = new BossData(
                         "Chopper", // name
@@ -361,7 +362,7 @@ public class BossData {
                         Boss.HP_NORMAL, // type hp
                         499000, // dame
                         0, // dame
-                        new double[][] { { 9957012000l } }, // hp
+                        new double[][] { { HP_1_TY } }, // hp
                         new short[] { 606, 607, 608 }, // outfit
                         new short[] { 135, 136, 137, 138 }, // map join
                         new int[][] { // skill
@@ -369,7 +370,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
 
         public static final BossData Nami = new BossData(
                         "Nami", // name
@@ -378,7 +379,7 @@ public class BossData {
                         Boss.HP_NORMAL, // type hp
                         599000, // dame
                         0, // dame
-                        new double[][] { { 99770000l } }, // hp
+                        new double[][] { { HP_1_TY } }, // hp
                         new short[] { 600, 601, 602 }, // outfit
                         new short[] { 135, 136, 137, 138 }, // map join
                         new int[][] { // skill
@@ -386,15 +387,15 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
         public static final BossData Franky = new BossData(
                         "Franky", // name
                         ConstPlayer.XAYDA, // gender
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        699000, // dame
+                        DMG_1TR, // dame
                         0, // dame
-                        new double[][] { { 9987100l } }, // hp
+                        new double[][] { { HP_1_TY } }, // hp
                         new short[] { 594, 595, 596 }, // outfit
                         new short[] { 135, 136, 137, 138 }, // map join
                         new int[][] { // skill
@@ -402,7 +403,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
 
         public static final BossData Usopp = new BossData(
                         "Usopp", // name
@@ -419,7 +420,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
         public static final BossData Robin = new BossData(
                         "Robin", // name
                         ConstPlayer.XAYDA, // gender
@@ -435,7 +436,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 7, 300 },
                                         { Skill.ANTOMIC, 7, 700 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _1_PHUT);
+                        _60_GIAY);
 
         public static final BossData BOSSVIP17 = new BossData(
                         "QUY LÃO [10k lưu ly]", // name
@@ -452,16 +453,16 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        1);
+                        _10_PHUT);
 
         public static final BossData BOSS_DAUGOD = new BossData(
                         "Khỉ Đột [Đậu Gold]", // name
                         ConstPlayer.XAYDA, // gender
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        200000, // dame
-                        0, // dame
-                        new double[][] { { 91500000L } }, // hp
+                        DMG_1TR, // dame
+                        DEF_300k, // dame
+                        new double[][] { { HP_10_TY } }, // hp
                         new short[] { 1589, 1590, 1591 }, // outfit
                         new short[] { 0, 1, 2, 3, 7, 8, 9, 14, 15, 16, 17, 6 }, // map join
                         new int[][] { // skill
@@ -469,7 +470,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP19 = new BossData(
                         "ZUKA [2M EXP Tu Tiên]", // name
@@ -486,7 +487,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSSVIP20 = new BossData(
                         "athur [1000 Điểm vip]", // name
                         ConstPlayer.XAYDA, // gender
@@ -502,7 +503,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSHONGNGOC = new BossData(
                         "Mai [100k hồng ngọc]", // name
@@ -519,7 +520,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSSK1 = new BossData(
                         "Sự kiện Tết %1", // name
@@ -536,7 +537,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSS_TRUNGQUY1 = new BossData(
                         "Sự Kiện Kết Hôn %1", // name
@@ -553,7 +554,7 @@ public class BossData {
                                         { Skill.LIEN_HOAN, 3, 300 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSS_TRUNGQUY2 = new BossData(
                         "Sự Kiện Kết Hôn %1", // name
                         ConstPlayer.XAYDA, // gender
@@ -569,7 +570,7 @@ public class BossData {
                                         { Skill.LIEN_HOAN, 3, 300 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSS_TRUNGQUY3 = new BossData(
                         "Sự Kiện Kết Hôn %1", // name
@@ -586,7 +587,7 @@ public class BossData {
                                         { Skill.LIEN_HOAN, 3, 300 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 30000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData chanmenh1 = new BossData(
                         "Fu [CM1]", // name
@@ -603,7 +604,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData chanmenh2 = new BossData(
                         "Siêu Picolo [CM2]", // name
                         ConstPlayer.XAYDA, // gender
@@ -619,7 +620,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData chanmenh3 = new BossData(
                         "Siêu vegeta [CM3]", // name
@@ -636,7 +637,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData chanmenh4 = new BossData(
                         "Vegeta Blue [CM4]", // name
                         ConstPlayer.XAYDA, // gender
@@ -652,7 +653,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData chanmenh5 = new BossData(
                         "Goku Blue [CMmax]", // name
@@ -669,7 +670,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData linhthu1 = new BossData(
                         "Cadich Tối Thượng [LinhThú]", // name
                         ConstPlayer.XAYDA, // gender
@@ -685,7 +686,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData linhthu2 = new BossData(
                         "Cadich Tối Thượng [LinhThú]", // name
                         ConstPlayer.XAYDA, // gender
@@ -701,7 +702,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData linhthu3 = new BossData(
                         "Cadich Tối Thượng [LinhThú]", // name
                         ConstPlayer.XAYDA, // gender
@@ -717,7 +718,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData linhthu4 = new BossData(
                         "Cadich Tối Thượng[LinhThú]", // name
@@ -734,7 +735,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData saophale = new BossData(
                         "Boss Spl [20h-21h]", // name
@@ -751,7 +752,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData luuly = new BossData(
                         "Boss Lưu Ly 7h Sáng", // name
@@ -768,7 +769,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData danhhieu = new BossData(
                         "Boss danh hiệu 22h", // name
                         ConstPlayer.XAYDA, // gender
@@ -784,7 +785,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData keybac = new BossData(
                         "Boss Key Bạc", // name
                         ConstPlayer.XAYDA, // gender
@@ -800,7 +801,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData keyvang = new BossData(
                         "Boss Key Vàng", // name
                         ConstPlayer.XAYDA, // gender
@@ -816,7 +817,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData dabaove = new BossData(
                         "Boss Đá Bảo Vệ", // name
                         ConstPlayer.XAYDA, // gender
@@ -832,7 +833,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 3, 3000 },
                                         { Skill.SOCOLA, 7, 90000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 60000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSSK2 = new BossData(
                         "Sự kiện Tết %1", // name
@@ -849,7 +850,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSSSK3 = new BossData(
                         "Sự kiện Tết %1", // name
                         ConstPlayer.XAYDA, // gender
@@ -865,7 +866,7 @@ public class BossData {
                                         { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSNGOCXANH = new BossData(
                         "Pi Lắp  [100k ngọc xanh]", // name
@@ -881,7 +882,7 @@ public class BossData {
                                         { Skill.DRAGON, 1, 100 }, { Skill.MASENKO, 7, 20 }, { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 30000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData TATHAN = new BossData(
                         "Kurama", // name
@@ -897,7 +898,7 @@ public class BossData {
                                         { Skill.DRAGON, 1, 100 }, { Skill.MASENKO, 7, 20 }, { Skill.DRAGON, 3, 3000 },
                                         { Skill.DRAGON, 7, 7000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         // --------------------------------------------------------------------------Broly
         public static final BossData Fide1 = new BossData(
@@ -907,7 +908,7 @@ public class BossData {
                         Boss.HP_NORMAL, // type hp
                         279000000,
                         0,
-                        new double[][] { { 342_000_000_000l } },
+                        new double[][] { { 32_000_000_000l } },
                         new short[] { 183, 184, 185 }, // ngoại hình
                         new short[] { 80 }, // map
                         new int[][] { // skill
@@ -921,7 +922,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Fide2 = new BossData(
                         "Fide 2 [CT 1K2%]",
@@ -930,7 +931,7 @@ public class BossData {
                         Boss.HP_NORMAL, // type hp
                         299000000,
                         0,
-                        new double[][] { { 4_444_200_000l } },
+                        new double[][] { { 40_444_200_000l } },
                         new short[] { 186, 187, 188 }, // ngoại hình
                         new short[] { 80 }, // map
                         new int[][] { // skill
@@ -995,9 +996,9 @@ public class BossData {
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        2499000000l,
+                        24990000l,
                         0,
-                        new double[][] { { 99384200000000l } },
+                        new double[][] { { HP_100_TY } },
                         new short[] { 1122, 1123, 1124 }, // ngoại hình
                         new short[] { 111 }, // map
                         new int[][] { // skill
@@ -1017,7 +1018,7 @@ public class BossData {
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        5499000000l,
+                        54990000l,
                         0,
                         new double[][] { { 99_999_000_000d } },
                         new short[] { 1131, 1132, 1133 }, // ngoại hình
@@ -1040,8 +1041,8 @@ public class BossData {
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        9900666666666d,
-                        980000d,
+                        DMG_10TR,
+                        DEF_0,
                         new double[][] { { 9_999_000_000d } },
                         new short[] { 502, 503, 504 }, // ngoại hình
                         new short[] { 80 }, // map
@@ -1056,15 +1057,15 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData ADR19 = new BossData(
                         "ANDROI 19",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        5000000,
-                        300000,
+                        DMG_1TR,
+                        DEF_0,
                         new double[][] { { 6_000_000_000l } },
                         new short[] { 249, 250, 251, 102, 22 }, // ngoại hình
                         new short[] { 93 }, // map
@@ -1079,16 +1080,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData ADR20 = new BossData(
                         "ANDROI 20",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        600000,
-                        400000000l,
-                        new double[][] { { 1_600_000_000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 255, 256, 257 }, // ngoại hình
                         new short[] { 93 }, // map
                         new int[][] { // skill
@@ -1102,16 +1103,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData PIC = new BossData(
                         "PIC",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        800000,
-                        7000L,
-                        new double[][] { { 2_000_000_000l } },
+                        DMG_10TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 1049, 1047, 1048 }, // ngoại hình
                         new short[] { 94, 96, 100 }, // map
                         new int[][] { // skill
@@ -1125,16 +1126,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData POC = new BossData(
                         "POC",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        890000,
-                        500000L,
-                        new double[][] { { 2_000_000_000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 1046, 1047, 1048 }, // ngoại hình
                         new short[] { 94, 96, 100 }, // map
                         new int[][] { // skill
@@ -1148,16 +1149,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENBOHUNG1 = new BossData(
                         "Xên Bọ Hung 1",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        12000000,
-                        5000000L,
-                        new double[][] { { 3000000000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_10_TY } },
                         new short[] { 228, 229, 230 }, // ngoại hình
                         new short[] { 97 }, // map
                         new int[][] { // skill
@@ -1171,16 +1172,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENBOHUNG2 = new BossData(
                         "Xên Bọ Hung 2",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        15000000,
-                        50000000L,
-                        new double[][] { { 3000000000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_10_TY } },
                         new short[] { 231, 232, 233 }, // ngoại hình
                         new short[] { 97 }, // map
                         new int[][] { // skill
@@ -1194,7 +1195,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENBOHUNG3 = new BossData(
                         "Xên Bọ Hung 3",
@@ -1202,7 +1203,7 @@ public class BossData {
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
                         19000000,
-                        5000L,
+                        DEF_0,
                         new double[][] { { 5000000000l } },
                         new short[] { 234, 235, 236 }, // ngoại hình
                         new short[] { 97 }, // map
@@ -1217,15 +1218,15 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
         public static final BossData XENCON1 = new BossData(
                         "Xên Con 1",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        28000000000l,
-                        50000000L,
-                        new double[][] { { 182723874l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 264, 265, 266 }, // ngoại hình
                         new short[] { 103 }, // map
                         new int[][] { // skill
@@ -1239,16 +1240,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENCON2 = new BossData(
                         "Xên Con 2",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        28000000000l,
-                        18274237L,
-                        new double[][] { { 18272370000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 264, 265, 266 }, // ngoại hình
                         new short[] { 103 }, // map
                         new int[][] { // skill
@@ -1262,16 +1263,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENCON3 = new BossData(
                         "Xên Con 3",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        28000000000l,
-                        18274237L,
-                        new double[][] { { 18272340000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 264, 265, 266 }, // ngoại hình
                         new short[] { 103 }, // map
                         new int[][] { // skill
@@ -1285,16 +1286,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENCON4 = new BossData(
                         "Xên Con 4",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        28000000000l,
-                        18274237L,
-                        new double[][] { { 1827230000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 264, 265, 266 }, // ngoại hình
                         new short[] { 103 }, // map
                         new int[][] { // skill
@@ -1308,16 +1309,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENCON5 = new BossData(
                         "Xên Con 5",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        28000000000l,
-                        18274237L,
-                        new double[][] { { 284729410000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 264, 265, 266 }, // ngoại hình
                         new short[] { 103 }, // map
                         new int[][] { // skill
@@ -1331,16 +1332,16 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENCON6 = new BossData(
                         "Xên Con 6",
                         ConstPlayer.TRAI_DAT,
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
-                        28000000000l,
-                        18274237L,
-                        new double[][] { { 1827240000l } },
+                        DMG_1TR,
+                        DEF_0,
+                        new double[][] { { HP_1_TY } },
                         new short[] { 264, 265, 266 }, // ngoại hình
                         new short[] { 103 }, // map
                         new int[][] { // skill
@@ -1354,7 +1355,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData XENCON7 = new BossData(
                         "Xên Con 7",
@@ -1362,7 +1363,7 @@ public class BossData {
                         Boss.DAME_NORMAL, // type dame
                         Boss.HP_NORMAL, // type hp
                         28000000l,
-                        18274237L,
+                        DEF_0,
                         new double[][] { { 1827237000l } },
                         new short[] { 264, 265, 266 }, // ngoại hình
                         new short[] { 103 }, // map
@@ -1377,7 +1378,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
 
         public static final BossData Blackgoku = new BossData(
                         "Black Goku [Chân mệnh]",
@@ -1400,7 +1401,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
         public static final BossData SuperBlackgoku = new BossData(
                         "Super Black Goku [Chân mệnh]",
                         ConstPlayer.TRAI_DAT,
@@ -1422,7 +1423,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
         public static final BossData VegetaSS1 = new BossData(
                         "Vegeta SS1 [Đeo Lưng]",
                         ConstPlayer.TRAI_DAT,
@@ -1444,7 +1445,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
         public static final BossData SieuXen = new BossData(
                         "Siêu Xên 3D [Đeo Lưng]",
                         ConstPlayer.TRAI_DAT,
@@ -1466,7 +1467,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _30_GIAY);
         public static final BossData ColerVang = new BossData(
                         "Coler Vàng [EXP Tiên Bang]",
                         ConstPlayer.TRAI_DAT,
@@ -1488,7 +1489,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData obito = new BossData(
                         "Obito",
@@ -1512,7 +1513,7 @@ public class BossData {
                                         // {Skill.THOI_MIEN, 7, 50000},
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
         public static final BossData naruto = new BossData(
                         "Naruto",
                         ConstPlayer.TRAI_DAT,
@@ -1535,7 +1536,7 @@ public class BossData {
                                         // {Skill.THOI_MIEN, 7, 50000},
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData BOSSNOBITA = new BossData(
                         "Nobita [Linh Thú 50k% HP,KI,SD]",
@@ -1558,7 +1559,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData BOSSDOREMON = new BossData(
                         "Đô Rê Mon [Linh Thú 50k% HP,KI,SD]",
@@ -1581,7 +1582,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData BOSSXUKA = new BossData(
                         "XU KA [Linh Thú 50k% HP,KI,SD]",
@@ -1604,7 +1605,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData BOSSCHAIEN = new BossData(
                         "Chai En [Linh Thú 50k% HP,KI,SD]",
@@ -1627,7 +1628,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
         public static final BossData BOSSXEKO = new BossData(
                         "XE KO [Linh Thú 50k% HP,KI,SD]",
                         ConstPlayer.TRAI_DAT,
@@ -1649,7 +1650,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData BOSSZAMASU = new BossData(
                         "Zamasu Base [giáp luyện tập 10k%]",
@@ -1672,7 +1673,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData DaThu1 = new BossData(
                         "Shukaku",
@@ -1695,7 +1696,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData DaThu2 = new BossData(
                         "Matatabi",
@@ -1718,7 +1719,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData DaThu3 = new BossData(
                         "Isobu",
@@ -1741,7 +1742,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData DaThu4 = new BossData(
                         "Son Goku",
@@ -1764,7 +1765,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
         public static final BossData DaThu5 = new BossData(
                         "Kokuo",
                         ConstPlayer.TRAI_DAT,
@@ -1786,7 +1787,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _60_GIAY);
 
         public static final BossData DaThu6 = new BossData(
                         "Saiken",
@@ -1809,7 +1810,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData DaThu7 = new BossData(
                         "Chomei",
                         ConstPlayer.TRAI_DAT,
@@ -1831,7 +1832,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData DaThu8 = new BossData(
                         "Gyuki",
                         ConstPlayer.TRAI_DAT,
@@ -1853,7 +1854,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData FROST1 = new BossData(
                         "FROST 1 (nro băng)",
@@ -1876,7 +1877,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData FROST2 = new BossData(
                         "FROST 2 (nro băng)",
@@ -1899,7 +1900,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData FROST3 = new BossData(
                         "FROST 3 (nro băng)",
@@ -1922,7 +1923,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Bujin = new BossData(
                         "Bujin",
@@ -1941,7 +1942,7 @@ public class BossData {
                                         { Skill.DRAGON, 7, 50 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Kogu = new BossData(
                         "Kogu",
@@ -1960,7 +1961,7 @@ public class BossData {
                                         { Skill.DRAGON, 7, 50 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Zangya = new BossData(
                         "Zangya",
@@ -1979,7 +1980,7 @@ public class BossData {
                                         { Skill.DRAGON, 7, 50 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Bido = new BossData(
                         "Bido",
@@ -1998,7 +1999,7 @@ public class BossData {
                                         { Skill.DRAGON, 7, 50 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Bojack = new BossData(
                         "Bojack",
@@ -2017,7 +2018,7 @@ public class BossData {
                                         { Skill.DRAGON, 7, 50 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData SiêuBojack = new BossData(
                         "Siêu Bojack",
@@ -2036,7 +2037,7 @@ public class BossData {
                                         { Skill.DRAGON, 7, 50 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSCOLOVANG = new BossData(
                         "Cooler Vàng",
@@ -2059,7 +2060,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData SO1 = new BossData(
                         "Số 1", // name
                         ConstPlayer.XAYDA, // gender
@@ -2082,7 +2083,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData SO2 = new BossData(
                         "Số 2",
                         ConstPlayer.XAYDA, // gender
@@ -2105,7 +2106,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 15000 }, { Skill.TAI_TAO_NANG_LUONG, 3, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         },
-                        _10_GIAY // số giây nghỉ
+                        _5_PHUT // số giây nghỉ
         );
         public static final BossData SO3 = new BossData(
                         "Số 3",
@@ -2129,7 +2130,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData SO4 = new BossData(
                         "Số 4",
@@ -2153,7 +2154,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData TDTRUONG = new BossData(
                         "Tiểu Đội Trưởng",
@@ -2177,7 +2178,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData THANHUYDIET = new BossData(
                         "Thần Berrus [Đồ 50 Sao]", // name
@@ -2201,7 +2202,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData THIENSUWISH = new BossData(
                         "Thiên sứ Whis [Đồ 60 Sao]", // name
@@ -2225,7 +2226,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData champa = new BossData(
                         "Thần Hủy Diệt Champa [Đá Ảo Hóa]", // name
@@ -2249,7 +2250,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData panchi = new BossData(
                         "Panchy [CT Ẩn 8 Dòng]", // name
@@ -2273,7 +2274,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData babyvegeta = new BossData(
                         "Baby Vegeta [CT Ẩn 10 Dòng]", // name
                         ConstPlayer.XAYDA, // gender
@@ -2296,7 +2297,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData superkhi = new BossData(
                         "Super Khỉ [CT Ẩn 12 Dòng]", // name
@@ -2320,7 +2321,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData vasdos = new BossData(
                         "Thiên Sứ Vados[Đá ảo hóa]", // name
@@ -2343,7 +2344,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP5 = new BossData(
                         "Thần Hủy Diệt Quitela[Đồ Hủy Diệt 50M]", // name
@@ -2367,7 +2368,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSSVIP6 = new BossData(
                         "Thiên Sứ Cognac[Đồ Hủy Diệt 50M]", // name
                         ConstPlayer.XAYDA, // gender
@@ -2390,7 +2391,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP7 = new BossData(
                         "Người Yêu Cũ [Thú Cưỡi 500k%]", // name
@@ -2414,7 +2415,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP8 = new BossData(
                         "Người Yêu Mới [Thú Cưỡi 500k%]", // name
@@ -2438,7 +2439,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP9 = new BossData(
                         "Sơn Tinh [Đeo Lưng 1M%]", // name
@@ -2462,7 +2463,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSSVIP10 = new BossData(
                         "Thủy Tinh [Đeo Lưng 1M%]", // name
                         ConstPlayer.XAYDA, // gender
@@ -2485,7 +2486,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP11 = new BossData(
                         "Vegeta [Phù Sinh Tử Đệ 1M%]", // name
@@ -2509,7 +2510,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP12 = new BossData(
                         "Goku [Phù Sinh Tử Đệ 1M%]", // name
@@ -2533,7 +2534,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSSVIP13 = new BossData(
                         "Truong [Phù Sinh Tử Đệ 1M%]", // name
                         ConstPlayer.XAYDA, // gender
@@ -2556,7 +2557,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP14 = new BossData(
                         "Goku SSJ [1 Tỷ VND]", // name
@@ -2580,7 +2581,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP15 = new BossData(
                         "Vegeta SSJ [10 Tỷ VND]", // name
@@ -2604,7 +2605,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSSKH1 = new BossData(
                         "Gohan [SKH THIÊN SỨ 1000%]", // name
@@ -2628,7 +2629,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSSKH2 = new BossData(
                         "Biden [SKH THIÊN SỨ 1000%]", // name
@@ -2652,7 +2653,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSSKH3 = new BossData(
                         "Cô Nương [SKH THIÊN SỨ 1000%]", // name
@@ -2676,7 +2677,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP21 = new BossData(
                         "Naruto", // name
@@ -2700,7 +2701,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP22 = new BossData(
                         "Obito", // name
@@ -2724,7 +2725,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP23 = new BossData(
                         "Hóa Thần [Thánh Thể 20M]", // name
@@ -2748,7 +2749,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSSVIP24 = new BossData(
                         "Vegito Ultra [Thánh Thể 20M]", // name
                         ConstPlayer.XAYDA, // gender
@@ -2771,7 +2772,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVIP25 = new BossData(
                         "Vegito [Thánh Thể 40M]", // name
@@ -2795,7 +2796,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BOSSVEGETO = new BossData(
                         "Vegito Hợp Thể", // name
@@ -2819,7 +2820,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData BOSSVEGETOUNTRA = new BossData(
                         "Vegito Untral", // name
                         ConstPlayer.XAYDA, // gender
@@ -2842,7 +2843,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData HaoThienKhuyen = new BossData(
                         "Chó Săn Thảo Nguyên", // name
@@ -2866,7 +2867,7 @@ public class BossData {
                                         // {Skill.THOI_MIEN, 7, 50000},
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 30000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData Panda = new BossData(
                         "Panda Thảo Nguyên", // name
@@ -2890,7 +2891,7 @@ public class BossData {
                                         // {Skill.THOI_MIEN, 7, 50000},
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 30000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         // --------------------------------------------------------------------------Boss
         // xên ginder
@@ -2917,7 +2918,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         // --------------------------------------------------------------------------Boss
         // berus
         public static final BossData WHIS = new BossData(
@@ -2941,7 +2942,7 @@ public class BossData {
                                         { Skill.THOI_MIEN, 7, 50000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 3, 20000 },
                                         { Skill.HUYT_SAO, 7, 20000 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData BILL = new BossData(
                         "Thần Hủy Diệt", // name
@@ -2962,7 +2963,7 @@ public class BossData {
                                         { Skill.MASENKO, 4, 1500 }, { Skill.MASENKO, 5, 1700 },
                                         { Skill.GALICK, 1, 1000 }
                         },
-                        _10_GIAY, true);
+                        _5_PHUT, true);
 
         // --------------------------------------------------------------------------Boss
         // CHILLED
@@ -2985,7 +2986,7 @@ public class BossData {
                                         { Skill.MASENKO, 4, 1500 }, { Skill.MASENKO, 5, 1700 },
                                         { Skill.GALICK, 1, 1000 }
                         },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData SUPERBLACKGOKU = new BossData(
                         "Super Black Goku %1", // name
@@ -3010,7 +3011,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData HOA_HONG = BossData.builder()
                         .name("Hoa Hồng")
@@ -3022,7 +3023,7 @@ public class BossData {
                         .outfit(new short[] { 706, 707, 708 })
                         .mapJoin(new short[] {})
                         .skillTemp(new int[][] {})
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData SANTA_CLAUS = BossData.builder()
@@ -3035,7 +3036,7 @@ public class BossData {
                         .outfit(new short[] { 657, 658, 659 })
                         .mapJoin(new short[] {})
                         .skillTemp(new int[][] {})
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData QILIN = BossData.builder()
@@ -3048,7 +3049,7 @@ public class BossData {
                         .outfit(new short[] { 763, 764, 765 })
                         .mapJoin(new short[] {})
                         .skillTemp(new int[][] {})
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData MABU_MAP = BossData.builder()
@@ -3073,7 +3074,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData MABU_MAP2 = BossData.builder()
@@ -3092,7 +3093,7 @@ public class BossData {
                                         { Skill.ANTOMIC, 3, 1200 },
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 25000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData SUPER_BU = BossData.builder()
@@ -3111,7 +3112,7 @@ public class BossData {
                                         { Skill.ANTOMIC, 3, 1200 },
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 25000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData KID_BU = BossData.builder()
@@ -3130,7 +3131,7 @@ public class BossData {
                                         { Skill.ANTOMIC, 3, 1200 },
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 25000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData BU_TENK = BossData.builder()
@@ -3149,7 +3150,7 @@ public class BossData {
                                         { Skill.ANTOMIC, 3, 1200 },
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 25000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData BU_HAN = BossData.builder()
@@ -3169,7 +3170,7 @@ public class BossData {
                                         { Skill.QUA_CAU_KENH_KHI, 7, 1200 },
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 25000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData DRABULA_TANG1 = BossData.builder()
@@ -3194,7 +3195,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData DRABULA_TANG5 = BossData.builder()
@@ -3219,7 +3220,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData DRABULA_TANG6 = BossData.builder()
@@ -3244,7 +3245,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData BUIBUI_TANG2 = BossData.builder()
@@ -3269,7 +3270,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData BUIBUI_TANG3 = BossData.builder()
@@ -3294,7 +3295,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData CALICH_TANG5 = BossData.builder()
@@ -3319,7 +3320,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData GOKU_TANG5 = BossData.builder()
@@ -3344,7 +3345,7 @@ public class BossData {
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 6, 30000 }, { Skill.TAI_TAO_NANG_LUONG, 7, 50000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData YACON_TANG4 = BossData.builder()
@@ -3368,7 +3369,7 @@ public class BossData {
                                         { Skill.MASENKO, 6, 1500 },
                                         { Skill.TAI_TAO_NANG_LUONG, 1, 5000 }, { Skill.TAI_TAO_NANG_LUONG, 3, 10000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 5, 25000 }, })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData XEN_MAX = BossData.builder()
@@ -3387,7 +3388,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData SOI_HEC_QUYN = BossData.builder()
@@ -3406,7 +3407,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData O_DO = BossData.builder()
@@ -3425,7 +3426,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData XINBATO = BossData.builder()
@@ -3444,7 +3445,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData CHA_PA = BossData.builder()
@@ -3463,7 +3464,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData PON_PUT = BossData.builder()
@@ -3482,7 +3483,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData CHAN_XU = BossData.builder()
@@ -3501,7 +3502,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData TAU_PAY_PAY = BossData.builder()
@@ -3520,7 +3521,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData YAMCHA = BossData.builder()
@@ -3539,7 +3540,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData JACKY_CHUN = BossData.builder()
@@ -3558,7 +3559,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData THIEN_XIN_HANG = BossData.builder()
@@ -3577,7 +3578,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.THAI_DUONG_HA_SAN, 1, 15000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData THIEN_XIN_HANG_CLONE = BossData.builder()
@@ -3596,7 +3597,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.THAI_DUONG_HA_SAN, 1, 15000 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
         public static final BossData LIU_LIU = BossData.builder()
                         .name("Liu Liu")
@@ -3614,7 +3615,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData NGO_KHONG = BossData.builder()
@@ -3633,7 +3634,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData BAT_GIOI = BossData.builder()
@@ -3652,7 +3653,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData FIDEGOLD = BossData.builder()
@@ -3671,7 +3672,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData CUMBER = BossData.builder()
@@ -3690,7 +3691,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData CUMBER2 = BossData.builder()
@@ -3709,7 +3710,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
         public static final BossData DRACULA = BossData.builder()
                         .name("Khiêu Chiến")
@@ -3727,7 +3728,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
         public static final BossData VO_HINH = BossData.builder()
                         .name("Khiêu Chiến")
@@ -3745,7 +3746,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
         public static final BossData BongBang = BossData.builder()
                         .name("Khiêu Chiến")
@@ -3762,7 +3763,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 1, 1000 }, { Skill.KAMEJOKO, 2, 1200 },
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 } })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData VuaQuySatan = BossData.builder()
@@ -3781,7 +3782,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
 
         public static final BossData ThoDauBac = BossData.builder()
@@ -3800,7 +3801,7 @@ public class BossData {
                                         { Skill.KAMEJOKO, 5, 1500 }, { Skill.KAMEJOKO, 7, 1700 },
                                         { Skill.GALICK, 1, 100 }
                         })
-                        .secondsRest(_10_GIAY)
+                        .secondsRest(_5_PHUT)
                         .build();
         public static final BossData SUMO = new BossData(
                         "Vegeta evo [Đá Bảo Vệ]",
@@ -3819,7 +3820,7 @@ public class BossData {
                                         { Skill.HUYT_SAO, 7, 10000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 10000 },
                                         { Skill.ANTOMIC, 7, 10 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
         public static final BossData SUMO1 = new BossData(
                         "Goku Mui [Đá Bảo Vệ]",
@@ -3838,7 +3839,7 @@ public class BossData {
                                         { Skill.HUYT_SAO, 7, 10000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 10000 },
                                         { Skill.ANTOMIC, 7, 10 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData SUMO2 = new BossData(
                         "Goku SSJ 4 [Đá Bảo Vệ]",
                         ConstPlayer.TRAI_DAT,
@@ -3856,7 +3857,7 @@ public class BossData {
                                         { Skill.HUYT_SAO, 7, 10000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 10000 },
                                         { Skill.ANTOMIC, 7, 10 }, },
-                        _10_GIAY);
+                        _5_PHUT);
         public static final BossData SUMO3 = new BossData(
                         "Vegeta SSJ 4 [Đá Bảo Vệ]",
                         ConstPlayer.TRAI_DAT,
@@ -3874,6 +3875,6 @@ public class BossData {
                                         { Skill.HUYT_SAO, 7, 10000 },
                                         { Skill.TAI_TAO_NANG_LUONG, 7, 10000 },
                                         { Skill.ANTOMIC, 7, 10 }, },
-                        _10_GIAY);
+                        _5_PHUT);
 
 }

@@ -296,7 +296,7 @@ public class NpcFactory {
                                         + "|6|Nhớ Nạp Nhiều Nhiều Cho Trường Nha\n"
                                         + "|5|Farm Train Điểm Ngũ Hành Sơn Đổi Quà VIP\n"
                                         + "|5|Điểm TrainFarm: " + Util.cap(player.diemfam) + " Điểm\n",
-                                        "Đến Map\nNgũ Hành Sơn", "Đến Map\nThảo Nguyên", "Đến Map\nThànhPhố\nTàiNguyên",
+                                        "Đến Map\nNgũ Hành Sơn", "Đến Map\nThảo Nguyên", "Đến Map\nThành Phố\nTài Nguyên",
                                         "Đến Map\nRừng Đá", "Đến Map\nThung Lũng", "Đến Map\nRừng Thông");
                             }
 
@@ -3440,7 +3440,7 @@ public class NpcFactory {
                         public void openBaseMenu(Player player) {
                             if (canOpenNpc(player)) {
                                 if (this.mapId == 5) {
-                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|Chào Mừng Các Bạn Mới Gia Nhập\n"
+                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|HELLO BẠN IU, BẠN CẦN GÌ NÀO\n"
                                             + "|4|SHOP DRAGON PHỤC VỤ FREE TÂN THỦ\n"
                                             + "BÁN BẰNG 1 NGỌC\n"
                                             + "|8|EM BÁN SẴN CÁC GÓI ƯU ĐÃI\n"
@@ -3548,12 +3548,12 @@ public class NpcFactory {
                         public void openBaseMenu(Player player) {
                             if (canOpenNpc(player)) {
                                 if (this.mapId == 0) {
-                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|Chào Mừng Các Bạn Mới Gia Nhập\n"
-                                            + "|4|Đây Là Trưởng Quỹ\n"
+                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|HELLO BẠN IU, BẠN CẦN GÌ NÀO\n"
+                                            + "|5|Đây Là Trưởng Quỹ\n"
                                             + "Hãy Up Quái Để Nhận Điểm\n"
                                             + "|7|Điểm TrainFarm: " + Util.cap(player.diemfam) + " Điểm\n"
                                             + "|2|LH Admin\n",
-                                            "Đổi\nTàiNguyên", "Đổi\nTrangBị", "Đổi\nCảiTrang", "Đổi\nPhụKiện", "Đổi\nLinhThú", "Đổi\nNhận Đệ");
+                                            "Đổi\nTài Nguyên", "Đổi\nTrang Bị", "Đổi\nCải Trang", "Đổi\nPhụ Kiện", "Đổi\nLinh Thú", "Đổi\nNhận Đệ");
                                 }
                             }
                         }
@@ -3729,7 +3729,7 @@ public class NpcFactory {
                         public void openBaseMenu(Player player) {
                             if (canOpenNpc(player)) {
                                 if (this.mapId == 5) {
-                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|Chào Mừng Các Bạn Mới Gia Nhập\n"
+                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|HELLO BẠN IU, BẠN CẦN GÌ NÀO\n"
                                             + "|4|Đây Là Kho quà Share\n"
                                             + "Hãy Chia Sẻ Bài Viết Để Nhận Điểm\n"
                                             + "|8|" + "\nĐiểm Chia sẻ: " + Util.cap(player.diemshe) + " Điểm\n"
@@ -3921,7 +3921,7 @@ public class NpcFactory {
                         public void openBaseMenu(Player player) {
                             if (canOpenNpc(player)) {
                                 if (this.mapId == 5) {
-                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|Chào Mừng Các Bạn Mới Gia Nhập\n"
+                                    this.createOtherMenu(player, ConstNpc.BASE_MENU, "|7|HELLO BẠN IU, BẠN CẦN GÌ NÀO\n"
                                             + "|4|Đây Là CF PASS Mùa 1\n"
                                             + "Hãy Săn Boss of Điểm danh Để Nhận Điểm Free\n"
                                             + "Nhận Mốc Thưởng Phong Phú\n"
@@ -4616,7 +4616,7 @@ public class NpcFactory {
                             if (canOpenNpc(player)) {
                                 if (!TaskService.gI().checkDoneTaskTalkNpc(player, this)) {
                                     this.createOtherMenu(player, ConstNpc.BASE_MENU,
-                                            "Cậu cần trang bị gì cứ đến chỗ tôi nhé", "Cửa\nhàng");
+                                            "Tớ có thể giúp cậu gì không?", "Cửa\nhàng");
                                 }
                             }
                         }
@@ -4767,7 +4767,7 @@ public class NpcFactory {
                                                 "Gọi rồng", "Từ chối");
                                     } else {
                                         this.createOtherMenu(player, ConstNpc.BASE_MENU,
-                                                "Anh cần trang bị gì cứ đến chỗ em nhé", "Cửa\nhàng");
+                                                "Em có thể giúp gì được cho anh?", "Cửa\nhàng");
                                     }
                                 }
                             }
@@ -4801,7 +4801,7 @@ public class NpcFactory {
                             if (canOpenNpc(player)) {
                                 if (!TaskService.gI().checkDoneTaskTalkNpc(player, this)) {
                                     this.createOtherMenu(player, ConstNpc.BASE_MENU,
-                                            "Ngươi cần trang bị gì cứ đến chỗ ta nhé", "Cửa\nhàng");
+                                            "Ta có thể giúp gì được cho nhà ngươi?", "Cửa\nhàng");
                                 }
                             }
                         }
@@ -8003,8 +8003,8 @@ public class NpcFactory {
                                 if (this.mapId == 0) {
                                     mapHoTong = listMap[Util.nextInt(listMap.length - 1)];
                                     this.createOtherMenu(player, ConstNpc.BASE_MENU, "Ngươi muốn gì ở ta?\n"
-                                            + "Ngươi Hãy Hộ Tống Ta Đến Nơi An Nghỉ Ta Sẽ Cho Ngươi Kho Báu !\n"
-                                            + "Thu Gom Đủ Linh Hồn Để Đổi Trang Sức Cực VIP Haha",
+                                            + "Ngươi hãy Hộ Tống ta đến nơi an toàn ta sẽ cho ngươi Kho Báu!\n"
+                                            + "Thu gom đủ Linh Hồn để đổi Trang Sức cực VIP Haha",
                                             "Vận Tiêu", "Shop Tiêu", "Từ chối");
                                 }
                             }
